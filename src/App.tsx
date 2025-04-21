@@ -10,6 +10,7 @@ import LoginSignup from "./pages/LoginSignup";
 import RastaHome from "./pages/RastaHome";
 import ChooseDriver from "./pages/ChooseDriver";
 import DriverProfile from "./pages/DriverProfile";
+import Is from "./pages/Is";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/rasta" element={<RastaHome />} />
           <Route path="/choose-driver" element={<ChooseDriver />} />
           <Route path="/driver/:name" element={<DriverProfile />} />
+          <Route path="/is" element={<Is />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
