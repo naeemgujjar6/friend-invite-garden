@@ -1,7 +1,7 @@
 
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Apple, Google, Info, HelpCircle } from "lucide-react";
+import { Apple, Github, Info, HelpCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const LoginSignup = () => {
@@ -48,7 +48,7 @@ const LoginSignup = () => {
           variant="outline"
           className="w-full flex items-center gap-3 justify-start border mb-5 text-base font-normal"
         >
-          <Google size={20} className="text-[#EA4335]" />
+          <Github size={20} className="text-[#24292e]" />
           Continue with Google
         </Button>
         {/* Help/Info Icons */}
