@@ -92,16 +92,26 @@ export default function DriverProfile() {
       {/* Profile form */}
       <form className="w-full max-w-xs flex flex-col gap-3 mt-2">
         <label className="text-xs font-semibold text-[#8E9196]">USERNAME</label>
-        <Input value={driver.name} readOnly icon={<User />} className="bg-white" />
+        <div className="relative">
+          <Input value={driver.name} readOnly className="bg-white pl-10" />
+          <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
+        </div>
+        
         <label className="text-xs font-semibold text-[#8E9196] mt-2">NIC No.</label>
         <Input value={driver.nic} readOnly className="bg-white" />
+        
         <label className="text-xs font-semibold text-[#8E9196] mt-2">Mobile no.</label>
-        <Input value={driver.mobile} readOnly icon={<Phone />} className="bg-white" />
+        <div className="relative">
+          <Input value={driver.mobile} readOnly className="bg-white pl-10" />
+          <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
+        </div>
+        
         <label className="text-xs font-semibold text-[#8E9196] mt-2">Location</label>
         <div className="relative">
-          <Input value={driver.location} readOnly className="pr-10 bg-white" />
-          <MapPin className="absolute top-2 right-2 w-5 h-5 text-rose-500" />
+          <Input value={driver.location} readOnly className="bg-white pr-10" />
+          <MapPin className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-rose-500" />
         </div>
+        
         <Button type="button" className="text-base bg-[#1EAEDB] hover:bg-[#178fb3] font-bold w-full mt-5 mb-2">SAVE</Button>
       </form>
     </div>
