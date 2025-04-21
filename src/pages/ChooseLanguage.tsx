@@ -33,7 +33,11 @@ export default function ChooseLanguage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#f8f9fa]">
       <Card className="w-[350px] rounded-xl p-6">
-        <h2 className="mb-4 text-[17px] font-medium text-gray-800">Choose your language</h2>
+        {/* New: Add global language heading */}
+        <div className="mb-2">
+          <h1 className="text-[20px] font-bold text-center text-gray-900">All Over The World Languages</h1>
+        </div>
+        <h2 className="mb-4 text-[17px] font-medium text-gray-800 text-center">Choose your language</h2>
         <div className="space-y-2">
           {LANGUAGES.map((lang, idx) => (
             <button
@@ -90,3 +94,4 @@ export default function ChooseLanguage() {
     </div>
   );
 }
+
