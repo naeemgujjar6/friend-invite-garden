@@ -2,32 +2,36 @@
 import {
   Bell,
   MapPin,
-  Cloud,
-  TrafficAdvisory,
-  Route,
+  CloudSun,
+  AlertTriangle,
+  Map,
+  CalendarDays,
+  CreditCard,
+  FileCheck,
   Calendar,
-  DrivingLicenseCenter,
-  EmergencyCall15,
-  TrafficFeedbackComplaints,
-  Incidents,
-  DrivingSchoolLocations,
-  NewsAndEvents
+  History,
+  Building,
+  Phone,
+  MessageSquare,
+  AlertCircle,
+  GraduationCap,
+  Newspaper
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const FEATURES = [
-  { icon: <TrafficAdvisory size={32} className="text-[#ea384c]" />, label: "Traffic Advisory" },
-  { icon: <Route size={32} className="text-[#ea384c]" />, label: "Route Planner" },
-  { icon: <Calendar size={32} className="text-[#ea384c]" />, label: "Challan Payment" },
-  { icon: <DrivingLicenseCenter size={32} className="text-[#ea384c]" />, label: "E-License\n(Get your License)" },
+  { icon: <AlertTriangle size={32} className="text-[#ea384c]" />, label: "Traffic Advisory" },
+  { icon: <Map size={32} className="text-[#ea384c]" />, label: "Route Planner" },
+  { icon: <CreditCard size={32} className="text-[#ea384c]" />, label: "Challan Payment" },
+  { icon: <FileCheck size={32} className="text-[#ea384c]" />, label: "E-License\n(Get your License)" },
   { icon: <Calendar size={32} className="text-[#ea384c]" />, label: "Schedule Appointment" },
-  { icon: <Calendar size={32} className="text-[#ea384c]" />, label: "Cancel Appointments/\nHistory" },
-  { icon: <DrivingLicenseCenter size={32} className="text-[#ea384c]" />, label: "Driving License Center" },
-  { icon: <EmergencyCall15 size={32} className="text-[#ea384c]" />, label: "Emergency Call 15" },
-  { icon: <TrafficFeedbackComplaints size={32} className="text-[#ea384c]" />, label: "Traffic Feedback/\nComplaints" },
-  { icon: <Incidents size={32} className="text-[#ea384c]" />, label: "Incidents" },
-  { icon: <DrivingSchoolLocations size={32} className="text-[#ea384c]" />, label: "Driving School Locations" },
-  { icon: <NewsAndEvents size={32} className="text-[#ea384c]" />, label: "News and Events" }
+  { icon: <History size={32} className="text-[#ea384c]" />, label: "Cancel Appointments/\nHistory" },
+  { icon: <Building size={32} className="text-[#ea384c]" />, label: "Driving License Center" },
+  { icon: <Phone size={32} className="text-[#ea384c]" />, label: "Emergency Call 15" },
+  { icon: <MessageSquare size={32} className="text-[#ea384c]" />, label: "Traffic Feedback/\nComplaints" },
+  { icon: <AlertCircle size={32} className="text-[#ea384c]" />, label: "Incidents" },
+  { icon: <GraduationCap size={32} className="text-[#ea384c]" />, label: "Driving School Locations" },
+  { icon: <Newspaper size={32} className="text-[#ea384c]" />, label: "News and Events" }
 ];
 
 const RastaHome = () => {
@@ -73,4 +77,3 @@ const RastaHome = () => {
 };
 
 export default RastaHome;
-
