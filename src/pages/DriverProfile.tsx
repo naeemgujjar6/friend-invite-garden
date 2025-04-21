@@ -1,68 +1,23 @@
 
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { MapPin, User, Phone, Image as ImageIcon } from "lucide-react";
 
-const DRIVERS = [
-  {
-    name: "Jamal",
-    avatar: "/lovable-uploads/196fa5fd-6dd5-43d4-b508-b570b9b9c57d.png",
-    nic: "3120193661967",
-    mobile: "03089007099",
-    location: "Lahore, Punjab, Pakistan"
-  },
-  {
-    name: "Rizwan",
-    avatar: "/lovable-uploads/196fa5fd-6dd5-43d4-b508-b570b9b9c57d.png",
-    nic: "3120193661111",
-    mobile: "03209999999",
-    location: "Islamabad, Pakistan"
-  },
-  {
-    name: "Humayun",
-    avatar: "/lovable-uploads/196fa5fd-6dd5-43d4-b508-b570b9b9c57d.png",
-    nic: "3120193661222",
-    mobile: "03081112222",
-    location: "Karachi, Pakistan"
-  },
-  {
-    name: "Maham",
-    avatar: "/lovable-uploads/196fa5fd-6dd5-43d4-b508-b570b9b9c57d.png",
-    nic: "3120193661333",
-    mobile: "03083334444",
-    location: "Rawalpindi, Pakistan"
-  },
-  {
-    name: "Noman",
-    avatar: "/lovable-uploads/196fa5fd-6dd5-43d4-b508-b570b9b9c57d.png",
-    nic: "3120193661444",
-    mobile: "03451234567",
-    location: "Multan, Pakistan"
-  }
-];
+const PROFILE = {
+  name: "Naeem Altaf",
+  avatar: "/lovable-uploads/649a8077-eced-4324-b139-8c6e10e8d338.png",
+  nic: "3120193661967",
+  mobile: "03089007099",
+  location: "Ahmedpur East, Punjab, Pakistan"
+};
 
 export default function DriverProfile() {
-  const { name } = useParams();
-  const driver = DRIVERS.find(
-    d => d.name.toLowerCase() === String(name).toLowerCase()
-  );
   const navigate = useNavigate();
 
-  if (!driver) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="text-center">
-          <div className="text-2xl font-bold mb-4">Driver not found</div>
-          <Button onClick={() => navigate(-1)}>Go Back</Button>
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <div className="min-h-screen w-full flex flex-col items-center py-5 bg-[#f3f3f3]">
-      {/* Simulated "Mazdoor" header bar */}
+    <div className="min-h-screen w-full flex flex-col items-center py-0 bg-[#f3f3f3]">
+      {/* Header bar */}
       <div className="w-full bg-lime-400 flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-3">
           <div className="rounded-full bg-white p-1">
@@ -76,11 +31,12 @@ export default function DriverProfile() {
           <span className="text-black/80 text-sm">PKR</span>
         </div>
       </div>
-      {/* Profile photo section */}
+
+      {/* Profile photo */}
       <div className="flex flex-col items-center mt-6 mb-2">
         <img
-          src={driver.avatar}
-          alt={driver.name}
+          src={PROFILE.avatar}
+          alt={PROFILE.name}
           className="rounded-full border-4 border-[#8E9196] w-24 h-24 object-cover shadow-lg"
         />
         <label className="mt-2 text-[#1EAEDB] font-medium cursor-pointer text-sm hover:underline flex items-center gap-1">
@@ -89,30 +45,33 @@ export default function DriverProfile() {
           <input type="file" className="hidden" />
         </label>
       </div>
+
       {/* Profile form */}
       <form className="w-full max-w-xs flex flex-col gap-3 mt-2">
         <label className="text-xs font-semibold text-[#8E9196]">USERNAME</label>
         <div className="relative">
-          <Input value={driver.name} readOnly className="bg-white pl-10" />
+          <Input value={PROFILE.name} readOnly className="bg-white pl-10" />
           <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
         </div>
         
         <label className="text-xs font-semibold text-[#8E9196] mt-2">NIC No.</label>
-        <Input value={driver.nic} readOnly className="bg-white" />
+        <Input value={PROFILE.nic} readOnly className="bg-white" />
         
         <label className="text-xs font-semibold text-[#8E9196] mt-2">Mobile no.</label>
         <div className="relative">
-          <Input value={driver.mobile} readOnly className="bg-white pl-10" />
+          <Input value={PROFILE.mobile} readOnly className="bg-white pl-10" />
           <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
         </div>
         
         <label className="text-xs font-semibold text-[#8E9196] mt-2">Location</label>
         <div className="relative">
-          <Input value={driver.location} readOnly className="bg-white pr-10" />
+          <Input value={PROFILE.location} readOnly className="bg-white pr-10" />
           <MapPin className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-rose-500" />
         </div>
         
-        <Button type="button" className="text-base bg-[#1EAEDB] hover:bg-[#178fb3] font-bold w-full mt-5 mb-2">SAVE</Button>
+        <Button type="button" className="text-base bg-[#1EAEDB] hover:bg-[#178fb3] font-bold w-full mt-5 mb-2 rounded-xl h-12">
+          SAVE
+        </Button>
       </form>
     </div>
   );
