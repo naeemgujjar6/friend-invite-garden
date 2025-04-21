@@ -21,6 +21,12 @@ const Index = () => {
           >
             Invite a Friend
           </a>
+          <a
+            href="/rasta"
+            className="inline-block px-6 py-3 rounded-xl bg-[#ea384c] text-white font-bold text-lg hover:bg-[#c50e36] transition"
+          >
+            RASTA Home
+          </a>
         </div>
       </div>
     </div>
