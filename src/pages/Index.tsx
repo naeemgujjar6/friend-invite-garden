@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -26,6 +27,12 @@ const Index = () => {
             className="inline-block px-6 py-3 rounded-xl bg-[#ea384c] text-white font-bold text-lg hover:bg-[#c50e36] transition"
           >
             RASTA Home
+          </a>
+          <a
+            href="/choose-driver"
+            className="inline-block px-6 py-3 rounded-xl bg-[#9b87f5] text-white font-bold text-lg hover:bg-[#7E69AB] transition"
+          >
+            Choose your driver
           </a>
         </div>
       </div>

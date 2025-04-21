@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import InviteFriend from "./pages/InviteFriend";
 import LoginSignup from "./pages/LoginSignup";
 import RastaHome from "./pages/RastaHome";
+import ChooseDriver from "./pages/ChooseDriver";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +24,7 @@ const App = () => (
           <Route path="/invite" element={<InviteFriend />} />
           <Route path="/login" element={<LoginSignup />} />
           <Route path="/rasta" element={<RastaHome />} />
+          <Route path="/choose-driver" element={<ChooseDriver />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
