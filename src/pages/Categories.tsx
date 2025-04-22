@@ -10,7 +10,7 @@ const categories = [
   { name: "Painter", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Home Construction", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Tile Mason", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
-  { name: "Towel", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
+  { name: "Ac Installation", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Eye Massage Instrument", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Solar Panels", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Adhesive Paper", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
