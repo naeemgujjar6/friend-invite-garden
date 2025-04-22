@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -10,6 +9,12 @@ const Index = () => {
           Start building your amazing project here!
         </p>
         <div className="flex flex-col gap-2 items-center mt-4">
+          <Link
+            to="/categories"
+            className="inline-block px-6 py-3 rounded-xl bg-purple-500 text-white font-semibold text-lg hover:bg-purple-600 transition mb-2"
+          >
+            Browse Categories
+          </Link>
           <a
             href="/login"
             className="inline-block px-6 py-3 rounded-xl bg-[#1EAEDB] text-white font-semibold text-lg hover:bg-[#178fb3] transition mb-2"

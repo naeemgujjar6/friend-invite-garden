@@ -13,6 +13,7 @@ import ChooseDriver from "./pages/ChooseDriver";
 import DriverProfile from "./pages/DriverProfile";
 import ChooseLanguage from "./pages/ChooseLanguage";
 import Is from "./pages/Is";
+import Categories from "./pages/Categories";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/categories" element={<Categories />} />
           <Route path="/invite" element={<InviteFriend />} />
           <Route path="/login" element={<LoginSignup />} />
           <Route path="/choose-language" element={<ChooseLanguage />} />
