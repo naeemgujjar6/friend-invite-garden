@@ -15,6 +15,12 @@ const Index = () => {
           >
             Browse Categories
           </Link>
+          <Link
+            to="/employees"
+            className="inline-block px-6 py-3 rounded-xl bg-gray-800 text-white font-semibold text-lg hover:bg-gray-900 transition mb-2"
+          >
+            Meet Our Team
+          </Link>
           <a
             href="/login"
             className="inline-block px-6 py-3 rounded-xl bg-[#1EAEDB] text-white font-semibold text-lg hover:bg-[#178fb3] transition mb-2"
