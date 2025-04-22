@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,7 +13,6 @@ import ChooseDriver from "./pages/ChooseDriver";
 import DriverProfile from "./pages/DriverProfile";
 import ChooseLanguage from "./pages/ChooseLanguage";
 import Is from "./pages/Is";
-import SearchPage from "./pages/SearchPage";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +24,6 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/search" element={<SearchPage />} />
           <Route path="/invite" element={<InviteFriend />} />
           <Route path="/login" element={<LoginSignup />} />
           <Route path="/choose-language" element={<ChooseLanguage />} />
