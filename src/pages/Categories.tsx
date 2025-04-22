@@ -6,7 +6,7 @@ const categories = [
   { name: "Electrician", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Plumber", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Welder", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
-  { name: "Edge & Corner Guar", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
+  { name: "Camera Installation", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Cloth Dryer", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Pants", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Material Paper", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
