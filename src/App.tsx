@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,7 +8,6 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import InviteFriend from "./pages/InviteFriend";
 import LoginSignup from "./pages/LoginSignup";
-import RastaHome from "./pages/RastaHome";
 import ChooseDriver from "./pages/ChooseDriver";
 import DriverProfile from "./pages/DriverProfile";
 import ChooseLanguage from "./pages/ChooseLanguage";
@@ -30,7 +30,6 @@ const App = () => (
           <Route path="/invite" element={<InviteFriend />} />
           <Route path="/login" element={<LoginSignup />} />
           <Route path="/choose-language" element={<ChooseLanguage />} />
-          <Route path="/rasta" element={<RastaHome />} />
           <Route path="/choose-driver" element={<ChooseDriver />} />
           <Route path="/driver/:name" element={<DriverProfile />} />
           <Route path="/is" element={<Is />} />
