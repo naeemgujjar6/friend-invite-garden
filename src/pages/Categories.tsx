@@ -1,3 +1,4 @@
+
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -14,9 +15,9 @@ const categories = [
   { name: "Carpenter", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Solar Panels Installer", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Helper", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
-  { name: "Fishing Bags", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
+  { name: "Glass & Door Expert", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Beautician", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
-  { name: "Swim Eyewear", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
+  { name: "Quran Teacher", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
   { name: "Driver", image: "/lovable-uploads/760ab183-dc4b-41b4-9f88-aadd6077fc9b.png" },
 ];
 
